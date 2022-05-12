@@ -201,6 +201,7 @@ $ bundle exec derailed exec --help
   $ derailed exec perf:app  # runs the performance test against two most recent commits of the current app
   $ derailed exec perf:gc  # outputs GC::Profiler.report data while app is called TEST_COUNT times
   $ derailed exec perf:heap  # heap analyzer
+  $ derailed exec perf:heap_diff  # three heaps generation for comparison
   $ derailed exec perf:ips  # iterations per second
   $ derailed exec perf:library  # runs the same test against two different branches for statistical comparison
   $ derailed exec perf:mem  # show memory usage caused by invoking require per gem
@@ -208,7 +209,6 @@ $ bundle exec derailed exec --help
   $ derailed exec perf:objects  # profiles ruby allocation
   $ derailed exec perf:stackprof  # stackprof
   $ derailed exec perf:test  # hits the url TEST_COUNT times
-  $ derailed exec perf:heap_diff  # three heaps generation for comparison
 ```
 
 Instead of going over each command we'll look at common problems and which commands are best used to diagnose them. Later on we'll cover all of the environment variables you can use to configure derailed benchmarks in it's own section.
