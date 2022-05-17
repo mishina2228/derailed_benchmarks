@@ -6,7 +6,7 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "rails", github: "rails/rails", ref: "12bb9d32f56883914abcd98fd72e3c68c444808d"
+gem "rails", github: "rails/rails", branch: "main"
 
 gem "devise", github: "heartcombo/devise", branch: "main"
 
