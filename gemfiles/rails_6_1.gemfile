@@ -4,7 +4,11 @@ source "https://rubygems.org"
 
 gem "rails", "~> 6.1.6"
 
-gem "net-smtp" if RUBY_VERSION >= "3.0.0"
+if RUBY_VERSION >= "3.0.0"
+  gem "net-imap"
+  gem "net-pop"
+  gem "net-smtp"
+end
 
 group :development, :test do
   gem "sqlite3", platform: [:ruby, :mswin, :mingw]
