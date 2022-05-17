@@ -35,7 +35,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rack-test",       ">= 0"
 
   gem.add_development_dependency "webrick",  ">= 0"
-  gem.add_development_dependency "capybara",  "~> 2"
+  gem.add_development_dependency "capybara",  "~> 3"
   gem.add_development_dependency "m"
   gem.add_development_dependency "rails",     "> 3", "< 8"
   gem.add_development_dependency "devise",    "> 3", "< 6"
