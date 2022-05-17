@@ -6,7 +6,7 @@ require 'derailed_benchmarks/require_tree'
 ENV['CUT_OFF'] ||= "0.3"
 
 # This file contains classes and monkey patches to measure the amount of memory
-# useage requiring an individual file adds.
+# usage requiring an individual file adds.
 
 # Monkey patch kernel to ensure that all `require` calls call the same
 # method
